@@ -1,0 +1,44 @@
+table{
+    background-color:blue;
+    box-shadow: 8px 8px 0 0;
+}
+td{
+    width:100px;
+    height:100px;
+    border-width:2px;
+    border-color:blue;
+    border-style:solid; 
+    border-radius:150px;
+    background-color:white;
+}
+span{
+    display: inline-block;
+    margin:50px;
+}
+.texte{
+    position:absolute;
+    top:50px;
+    right:30px;
+}
+td[data-victoire='win']
+{
+    -moz-animation: flash 1s;
+    -webkit-animation: flash 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+}
+
+span[att='carre']
+{
+    width:10px;
+    height:10px;
+    margin:0; 
+}
+
+@-webkit-keyframes flash
+{
+from {opacity: 0.6;}
+to {opacity: 1;}
+}
